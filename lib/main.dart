@@ -7,7 +7,7 @@ void main() => runApp(MaterialApp(
     home: MyApp(),
     debugShowCheckedModeBanner: false,
     // routes: <String, WidgetBuilder>{},
-    theme: ThemeData()));
+    theme: ThemeData(fontFamily: 'Cera Pro')));
 
 class MyApp extends StatefulWidget {
   @override
