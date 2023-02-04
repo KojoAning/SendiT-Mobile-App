@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:sendit/Home.dart';
+import 'package:sendit/SignUp.dart';
 
 class login extends StatefulWidget {
   const login({super.key});
@@ -141,6 +142,34 @@ class _loginState extends State<login> {
                     )),
                   ),
                 ),
+                SizedBox(
+                  height: 10,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      'Dont have an account? ',
+                      style: TextStyle(color: Colors.white, fontSize: 16),
+                    ),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (BuildContext context) => Signup()));
+                      },
+                      child: Text(
+                        'Sign Up',
+                        style: TextStyle(
+                            fontFamily: 'Cera Pro',
+                            color: Color(0xFFFe11955),
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16),
+                      ),
+                    )
+                  ],
+                )
               ],
             ),
           ),
